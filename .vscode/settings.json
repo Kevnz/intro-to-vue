@@ -1,16 +1,19 @@
 {
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#f7df1e",
+    "titleBar.inactiveBackground": "#f7df1e",
+    "titleBar.border": "#1d1d1d",
+    "activityBar.background": "#1d1d1d",
+    "activityBar.foreground": "#f7df1e",
+    "titleBar.activeForeground": "#1d1d1d",
+    "tab.activeBorder": "#f7df1e",
+    "statusBar.background": "#f7df1e",
+    "statusBar.foreground": "#1d1d1d"
+  },
   "eslint.autoFixOnSave": true,
   "editor.formatOnSave": true,
   "[javascript]": {
     "editor.formatOnSave": false
-  },
-  "workbench.colorCustomizations": {
-    "titleBar.activeBackground": "#42b983CC",
-    "titleBar.inactiveBackground": "#42b983cc",
-    "titleBar.border": "#fff",
-    "activityBar.background": "#34495e",
-    "activityBar.foreground": "#42b983",
-    "titleBar.activeForeground": "#34495e"
   },
   "vsicons.presets.jsOfficial": true,
   "vsicons.presets.jsonOfficial": true,

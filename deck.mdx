@@ -1,6 +1,11 @@
 import { Head, Notes } from 'mdx-deck'
-
-export { theme } from './theme'
+// export { theme } from './theme'
+import future from '@mdx-deck/themes/future'
+import highlight from '@mdx-deck/themes/syntax-highlighter-prism'
+export const themes = [
+  future,
+  highlight
+]
 
 <Head>
   <title>Vue.js - An Introduction</title>
@@ -48,13 +53,65 @@ Simple Hello World
 
 ---
 
-## CLI for Vue.js
+## Hello World
 
+```html
+<template>
+  <div id="app">
+    <img alt="Vue logo" src="./assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  </div>
+</template>
+```
 
 <Notes>
-Intro CLI
+
 </Notes>
 
+---
+
+## Hello World
+
+```javascript
+<script>
+import HelloWorld from "./components/HelloWorld.vue";
+
+export default {
+  name: "app",
+  components: {
+    HelloWorld
+  }
+};
+</script>
+```
+
+<Notes>
+
+</Notes>
+
+---
+
+## Hello World
+
+```html
+<style>
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
+
+```
+
+<Notes>
+
+</Notes>
+
+---
 ---
 
 ## CLI for Vue.js
@@ -62,6 +119,7 @@ Intro CLI
 
 <Notes>
 Intro CLI
+-  npx @vue/cli create hello
 </Notes>
 
 ---
@@ -70,7 +128,7 @@ Intro CLI
 
 
 <Notes>
-Intro The admin UI
+npx @vue/cli ui
 </Notes>
 
 ---
@@ -81,5 +139,3 @@ Intro The admin UI
 <Notes>
 Use the admin UI to create a project
 </Notes>
-
----
